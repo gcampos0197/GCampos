@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
 @import url('https://fonts.googleapis.com/css?family=Bubbler+One');
 
+/*universal*/
+.portfolio-logo{
+    font-family: 'Rock Salt', cursive
+}
+
 /*contacct styles*/
 .contact-bg{
   background-image: url('../img/bg1.jpg');
@@ -10,10 +15,6 @@
   height: 550px
 }
 
-.chat-text {
-  margin-top: 60px;
-  position: relative;
-}
 .chat-bubble {
   margin-top: 60px;
 }
@@ -24,11 +25,13 @@
    position: relative;
  }
 
+
+
 /*bio*/
 .welcome {
   font-family: 'Rock Salt', cursive;
   font-size: 85px;
-  margin-top: -50px;
+  margin-top: -70px;
   color: white;
   text-shadow: 8px 5px #FAE841;
   z-index: 10;
@@ -57,11 +60,12 @@
  }
 
  .bio-box {
-   margin-top: 35px;
-   width: 450px;
+   margin-top:5px;
+   width: 500px;
    height: 400px;
-   font-size: 30px;
+   font-size: 40px;
    color: white;
+   font-family: Amatic SC;
  }
 
  /*skills*/
@@ -69,7 +73,6 @@
    background-color: rgba(255, 255, 255, .5);
    margin-top: 50px;
    margin-bottom: 50px;
-   width: 1170px;
    height: 300px;
    padding: 40px;
    border-top: solid 2px;
@@ -84,11 +87,10 @@
    margin-bottom: 30px;
  }
  i.fa-code,
- i.fa-handshake-o,
- i.fa-microphone {
+ i.fa-arrows,
+ i.fa-file-image-o {
    font-size: 30px;
-
- }
+   }
 
  /*carousel styles*/
  .projects-text {
@@ -108,16 +110,24 @@
    font-family: 'Rock Salt', cursive;
    text-shadow: 8px 5px #fff;
    font-size: 40px;
+   background-size: cover;
 
  }
+
+ .pet-text {
+   font-size: 40px;
+ }
+
+.carousel-text {
+  font-size: 50px;
+  text-align: left;
+}
 
  #projects-box {
    background-color: rgba(255, 255, 255, 0.5);
    margin-top: 50px;
-
-   height: px;
    padding: 30px;
-   width: 400px;
+   width: 80%;
    border: 1px solid #c3c3c3;
    display: -webkit-flex; /* Safari */
    -webkit-justify-content: space-around; /* Safari 6.1+ */

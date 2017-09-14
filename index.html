@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Gloria Campos</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
   <!--Nav Bar begins-->
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" id="navbar-example">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,12 +27,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Skills<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Projects</a></li>
+        <li class="active"><a href="#skills">Skills<span class="sr-only">(current)</span></a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
           </ul>
         </li>
       </ul>
@@ -40,16 +40,13 @@
   </div><!-- /.container-fluid -->
   </nav> <!--Nav bar section ends-->
 
-<!-- contact starts -->
- <div class="container-fluid contact-bg">
-   <div class="row">
-     <div class="chatbubble text-center">
-       <h1 class="chat-text">Let's Chat!</h1>
-         <i class="fa fa-comments chat-bubble" aria-hidden="true"></i>
-     </div>
-   </div>
- </div>
- <!-- contact ends -->
+  <div class="container-fluid contact-bg" id="contact">
+    <div class="row">
+      <div class="chatbubble text-center">
+          <i class="fa fa-comments chat-bubble" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
 
 <!-- bio starts -->
  <div class="container-fluid body">
@@ -57,7 +54,8 @@
      <h1 class="text-center welcome"> Gloria is the Name</h1>
      <div class="row">
        <div class="col-xs-5 col-xs-offset-1 bio-box">
-         <p class="text-center bio">I have just discovered a new love for front-end technologies and design. Take a look around and get to know a little about myself.</p>
+         <p class="bio">This is a place where i will be posting all of my work related to computer programming.</p>
+        <p class="bio">If you wish to collaborate or chat about ideas send me a message by clicking on the chat bubble above!</p>
        </div>
        <div class="col-xs-4 col-xs-offset-2 photo">
        </div>
@@ -68,22 +66,26 @@
 
 
  <!-- Skills section starts here  -->
-  <div class="container text-center skills-box">
-    <h1 class="skills-text">
-      Lerning New SKills is my Game
-    </h1>
+  <div class="container text-center skills-box" id="skills">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="skills-text">
+        Learning New SKills is my Game
+        </h1>
+      </div>
+    </div>
  	 <div class="row">
-    <div class="col-md-4 skill">
+    <div class="col-xs-4 skill">
  		 <i class="fa fa-code" aria-hidden="true"></i>
- 		 <h2>HTML/CSS</h2>
+ 		 <h2 class="basic-text">HTML/CSS</h2>
  	 </div>
-    <div class="col-md-4 skill">
- 		<i class="fa fa-handshake-o" aria-hidden="true"></i>
- 		 <h2>Marketing</h2>
+    <div class="col-xs-4 skill">
+ 		<i class="fa fa-arrows" aria-hidden="true"></i>
+ 		 <h2 class="basic-text">Responsive Web-Design</h2>
  	 </div>
-    <div class="col-md-4 skill">
- 		 <i class="fa fa-microphone" aria-hidden="true"></i>
- 		<h2>Spanish</h2>
+    <div class="col-xs-4 skill">
+ 		 <i class="fa fa-file-image-o" aria-hidden="true"></i>
+ 		<h2 class="basic-text">Photoshop</h2>
  	</div>
   </div>
  </div>
@@ -91,7 +93,7 @@
  <!-- Skills section ends here -->
 
  <!--carousel begins  -->
- <div class="container carousel-container">
+ <div class="container carousel-container" id="projects">
  	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
  	  <!-- Indicators -->
  	  <ol class="carousel-indicators">
@@ -104,25 +106,22 @@
  	  <div class="carousel-inner" role="listbox">
  	    <div class="item active" id="projectscover">
  				<div class="flex-wrapper">
+          <div class="carousel-caption" id="projects-box">
+             <p class="carousel-text">Check out my Projects</p>
+          </div>
  		  </div>
- 			<div class="carousel-caption">
-         <div class="projects-box text-center" id="projects-box">
- 	    	<h2>Check out my Projects</h4>
-         </div>
- 			</div>
  			</div>
  			<div class="item" id="petstore">
  	      <div class="carousel-caption">
- 	        <h2>Pet Store</h4>
+ 	        <h2 class="pet-text">Pet Store</h4>
  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta aliquid dolores</p>
- 					<button class="btn btn-lg btn-warning">View Website</button>
+ 					<a href="https://geekwiseb2.github.io/pet-store-august-2017-gcampos0197/" target="_blank"><button class="btn btn-lg btn-warning">View Website</button></a>
  				</div>
  			</div>
  			<div class="item" id="restuarant">
  	      <div class="carousel-caption">
  				<img src="img/logo-01.png" alt="Cutlery Logo" class="img-responsive center-block" id="carousel-logo">
-
-           <a href="https://geekwiseb2.github.io/restaurante-july-17-gcampos0197/"><button class="btn btn-lg btn-warning">View Website</button></a>
+           <a href="https://geekwiseb2.github.io/restaurante-july-17-gcampos0197/" target="_blank"><button class="btn btn-lg btn-warning">View Website</button></a>
  				</div>
  			</div>
  		</div>
@@ -151,20 +150,20 @@
 		</div>
 		</div><!--CONTACT ENDS-->
 				<div class="col-sm-3 contact-info">
-						<p class="address">
-							Pet Store<br>
+						<p class="address basic-text-">
+							Gloria Campos<br>
 							Fresno, CA<br>
-						  info@petstore.com</p>
+						  GCampos0197@gmail.com</p>
 				</div>
 				<div class="col-sm-3 social"> <!-- SOCIAL BEGINS -->
-					<a href="#">
+					<a href="https://www.facebook.com/">
             <i class="fa fa-facebook-square" aria-hidden="true"></i>
-						<span class="hidden-xs">Facebook</span>
+						<span class="hidden-xs basic-text">Facebook</span>
 					</a>
 					<br class="hidden-xs">
-					<a href="#">
+					<a href="https://www.linkedin.com/feed/?trk=hb_signin">
 						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-						<span class="hidden-xs">Linked In</span>
+						<span class="hidden-xs basic-text">Linked In</span>
 					</a>
 
 				</div><!--SOCIAL ENDS-->
