@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+
+/*universal*/
+.portfolio-logo{
+    font-family: 'Rock Salt', cursive
+}
+
+/*contacct styles*/
+.contact-bg{
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 550px
+}
+
+.chat-bubble {
+  margin-top: 60px;
+}
+
+ i.fa-comments {
+   font-size: 300px;
+   display:block;
+   position: relative;
+ }
+
+
+
+/*bio*/
+.welcome {
+  font-family: 'Rock Salt', cursive;
+  font-size: 85px;
+  margin-top: -70px;
+  color: white;
+  text-shadow: 8px 5px #FAE841;
+  z-index: 10;
+  position: relative;
+}
+
+.photo {
+  background-image: url('../img/Gloria.jpg');
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  position:relative;
+  z-index: 2;
+  margin-top: -20px;
+  border-radius: 10px 30px;
+  -ms-transform: rotate(10deg); /* IE 9 */
+ -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+ transform: rotate(10deg);
+}
+
+ .body-box {
+   height: 400px;
+   margin-top: -100px;
+   border-radius: 30px;
+   background-color: black;
+ }
+
+ .bio-box {
+   margin-top:5px;
+   width: 500px;
+   height: 400px;
+   font-size: 40px;
+   color: white;
+   font-family: Amatic SC;
+ }
+
+ /*skills*/
+ .skills-box {
+   background-color: rgba(255, 255, 255, .5);
+   margin-top: 50px;
+   margin-bottom: 50px;
+   height: 300px;
+   padding: 40px;
+   border-top: solid 2px;
+   border-bottom: solid 2px;
+ }
+
+ .skills-text {
+   font-family: 'Rock Salt', cursive;
+   font-size: 40px;
+   color: black;
+   text-shadow: 8px 5px #FAE841;
+   margin-bottom: 30px;
+ }
+ i.fa-code,
+ i.fa-arrows,
+ i.fa-file-image-o {
+   font-size: 30px;
+   }
+
+ /*carousel styles*/
+ .projects-text {
+   font-family: 'Rock Salt', cursive;
+   font-size: 40px;
+   color: black;
+   text-shadow: 8px 5px #FAE841;
+ }
+ .item {
+   height: 550px;
+   background-size: cover;
+   background-position: center;
+ }
+
+ #projectscover {
+   background-image: url('../img/bio.jpg');
+   font-family: 'Rock Salt', cursive;
+   text-shadow: 8px 5px #fff;
+   font-size: 40px;
+   background-size: cover;
+
+ }
+
+ .pet-text {
+   font-size: 40px;
+ }
+
+.carousel-text {
+  font-size: 50px;
+  text-align: left;
+}
+
+ #projects-box {
+   background-color: rgba(255, 255, 255, 0.5);
+   margin-top: 50px;
+   padding: 30px;
+   width: 80%;
+   border: 1px solid #c3c3c3;
+   display: -webkit-flex; /* Safari */
+   -webkit-justify-content: space-around; /* Safari 6.1+ */
+   display: flex;
+   justify-content: space-around;
+ }
+
+ #petstore {
+   background-image: url('../img/pet.jpg');
+ }
+
+ .flex-wrapper {
+   height: 100%;
+   display: flex;
+   align-items: center;
+ }
+
+ #restuarant {
+   background-image: url('../img/wood-2.jpg');
+ }
+
+ #carousel-logo {
+   height: 200px;
+ }
+
+ .carousel-caption {
+   padding-bottom: 10em;
+ }
+
+ .btn-warning {
+   background-color: #f8512f;
+   border: none;
+ }
+
+ .btn-warning:hover {
+   background-color: #D34326;
+ }
+
+ .carousel-container {
+   position:relative;
+   margin-bottom: 40px;
+ }
+
+
+/*Footer section styles*/
+
+.footer {
+  height: 130px;
+  background-color: #000;
+  padding-top: 15px;
+}
+
+.contact-info,
+.social {
+  color: grey;
+  margin-top: 10px;
+  border-left-style: solid;
+  border-color: grey;
+  border-width: 2px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+  a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+.fine-print {
+  font-size: small;
+}
